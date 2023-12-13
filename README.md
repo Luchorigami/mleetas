@@ -1,9 +1,11 @@
 ![event](logo_mleetas.png)
 # Package MleETAS 
+( Maximum Likelyhood Estimation of ETAS and ETASI )
 
-A python package to fit and simulate the Epidemic Type Aftershock model in seismology (Ogata, 1988).
+A python package to fit and simulate the Epidemic Type Aftershock Sequence (ETAS) model in seismology (Ogata, 1988). 
+Also include routines for the ETASI model of Hainzl (2021) (i.e.; take into account short term incompletness)
 
-The parameter estimation rely on the maximization of a likelyhood function trough scipy L-BFGS-B optimization.
+The parameter space estimation rely on the maximization of a likelyhood function trough scipy's L-BFGS-B optimization routine.
 
 ## Overview
 The mleetas package contain 3 modules:
