@@ -1,9 +1,9 @@
 ![event](logo_mleetas.png)
-# Package mleetas 
+# Package MleETAS 
 
 A python package to fit and simulate the Epidemic Type Aftershock model in seismology (Ogata, 1988).
 
-The parameter estimation rely on the maximisation of a likelyhood function trough LBFG routine.
+The parameter estimation rely on the maximization of a likelyhood function trough scipy L-BFGS-B optimization.
 
 ## Overview
 The mleetas package contain 3 modules:
@@ -27,7 +27,7 @@ Install the package with pip
     pip install mleetas/
 
 ## Example
-You can find examples to simulate and fit etas with this package in the example dir.
+You can find examples to simulate and fit etas with the MleETAS package in the example dir.
 
 ## References
 - Hainzl, S., 2021. ETAS-Approach Accounting for Short-Term Incompleteness of Earthquake Catalogs. Bulletin of the Seismological Society of America. https://doi.org/10.1785/0120210146
