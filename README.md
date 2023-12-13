@@ -9,7 +9,7 @@ Download the repo
 
 Install the package with pip
 
-    pip install mleetas
+    pip install mleetas/
 
 ## Example
 You can find an example to simulate and fit etas in the example dir.
