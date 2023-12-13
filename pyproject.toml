@@ -7,7 +7,7 @@ authors = [
 description = "A package for the ETAS model in seismology"
 readme = "README.md"
 requires-python = ">=3.8"
-
+dependencies = ["Scipy","Matplotlib"]
 #[project.urls]
 #Homepage = "https://github.com/pypa/sampleproject"
 #Issues = "https://github.com/pypa/sampleproject/issues"
