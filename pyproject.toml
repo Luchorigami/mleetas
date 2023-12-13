@@ -1,0 +1,13 @@
+[project]
+name = "mleetas"
+version = "0.0.1"
+authors = [
+  { name="Luc Moutote", email="luc.moutote@gmail.com" },
+]
+description = "A package for the ETAS model in seismology"
+readme = "README.md"
+requires-python = ">=3.8"
+
+#[project.urls]
+#Homepage = "https://github.com/pypa/sampleproject"
+#Issues = "https://github.com/pypa/sampleproject/issues"
