@@ -1,7 +1,9 @@
-![event](logo.png)
+![event](logo_mleetas.png)
 # Package mleetas 
 
 A python package to fit and simulate the Epidemic Type Aftershock model in seismology (Ogata, 1988).
+
+The parameter estimation rely on the maximisation of a likelyhood function trough LBFG routine.
 
 ## Overview
 The mleetas package contain 3 modules:
@@ -13,10 +15,10 @@ The mleetas package contain 3 modules:
 5. **mleetas.simulation**:
     * A module to generate synthetics ETAS and ETASI catalogs, stationary background catalogs, Gutenberg-Richter magnitude distribution and more.
 
-For now refer to the inner function documentations and the two example file in the dir. "example/"
+for more detail, refer to the code documentation inside functions and the 2 example python file in the dir. "example/"
 
 ## Package installation
-Download the repo
+Download the repo wherever you like (Under the directory name mleetas/)
 
     git clone https://github.com/Luchorigami/mleetas.git
 
