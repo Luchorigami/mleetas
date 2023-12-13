@@ -1,12 +1,17 @@
+![event](logo.png)
 # Package mleetas 
 
 A python package to fit and simulate the Epidemic Type Aftershock model in seismology (Ogata, 1988).
 
 ## Overview
 The mleetas package contain 3 modules:
-    - etas       : A module to fit the classic ETAS model. (5 parameters A,c,p,al,mu)
-    - etasi      : A module to fit the ETASI model. A modified version of the classic ETAS to take into account a rate dependent incompletness effect (Hainzl; 2021)
-    - simulation : A module to generate synthetics ETAS and ETASI model, background rate, Gutenberg-Richter magnitude distribution and more.
+
+1. **mleetas.etas**:
+    * A module to fit the classic ETAS model. 5 parameters: (A,c,p,al,mu)
+3. **mleetas.etasi**:
+    * A module to fit the ETASI model. A modified version of the classic ETAS to take into account a rate dependent incompletness effect (Hainzl; 2021). 7 parameters: (A,c,p,al,mu,b,Tb)
+5. **mleetas.simulation**:
+    * A module to generate synthetics ETAS and ETASI catalogs, stationary background catalogs, Gutenberg-Richter magnitude distribution and more.
 
 For now refer to the inner function documentations and the two example file in the dir. "example/"
 
