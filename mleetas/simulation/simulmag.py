@@ -36,4 +36,26 @@ def gutricht(b,mc,N):
     
     return np.array(m)
 
+def bvalue_aki(mag,mc):
+    """
+    Maximum likely-hood estimator of the b-value of the Gutenberg Richter law
+
+    See a paper from Keitii Aki in the 60s
+
+    Parameters:
+    -----------
+    mag: numpy array
+        array of magnitudes of the catalogue (Only magnitudes 
+        above the magnitude of completnes)
+
+    Returns:
+    --------
+    b : float
+        The maximum likely hood estimate of the G-R b-value for the given 
+        magnitude distribution
+    mc : float
+        Magnitude of completness
+    """
+    return np.log10(np.e)/np.mean(mag-mc)
+
 

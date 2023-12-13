@@ -1,7 +1,13 @@
 """
 How to simulate and fit the temporal ETAS model 
 
-Luc Moutote - ITES - lmoutote@unistra.fr
+References ETAS:
+=================
+    Zhuang, J., Harte, D., Werner, M.J., Hainzl, S., Zhou, S., 2012. Basic 
+    models of seismicity: Temporal models. Community Online Resource for 
+    Statistical Seismicity Analysis Theme V.
+
+Luc Moutote - ITES - luc.moutote@gmail.com - 2023
 """
 import numpy as np
 import matplotlib.pyplot as plt
@@ -38,9 +44,14 @@ mag = simulmag.gutricht(b,mc,10000)
 Generate a synthetic ETAS catalog
 """
 tetas, metas = simuletas.etas(A,c,p,al,mu,T,mc,mag,lim=20000)
-
 print('Number of event: ', len(tetas))
 
+# Plot
+plt.figure()
+plt.plot(tetas,metas,'k.')
+plt.xlabel('Time')
+plt.ylabel('Magnitude')
+plt.show()
 
 
 """
@@ -48,6 +59,12 @@ Fit the ETAS model on the generated catalog
 We use the array theta to gather all ETAS parameters
 theta = np.array([A,c,p,al,mu])
 """
+
+# In the classic ETAS model the b-value is independant from ETAS parameters
+# It can be estimated aside from ETAS with the aki estimator
+b_aki       = simulmag.bvalue_aki(mag,mc)
+print('MLE b-value: ',b_aki)
+
 # Try to give a good starting point for the parameter search
 theta0 = np.array([0.1,0.005,1.6,1.2,3])
 

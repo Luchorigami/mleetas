@@ -2,7 +2,7 @@
 Temporal ETAS model parameters inversion procedure.
 
 Parameter space:
-    theta   = ( A, c, p, alpha, mu, b )
+    theta   = ( A, c, p, alpha, mu )
 
 Author:
     Luc Moutote -- luc.moutote@gmail.com -- 30/11/23
@@ -74,14 +74,12 @@ def fitETAS(tevent,mevent,theta):
     tevent  : List of events origine time relative to 0 (tevent[0]=0)
     mevent  : Related magnitude of events. Warning Mc must be = 0. Remember to 
               remove Mc from your magnitude before calling the function
-    theta   : ETASI parameter (A,c,p,al,mu,b,Tb)
+    theta   : ETASI parameter (A,c,p,al,mu,Tb)
               A     : Average aftershock productivity
               c     : From Omori-Utsu law
               p     : From Omori-Utsu law
               al    : Scale the aftershock productivity of magnitude 
               mu    : Background rate
-              b     : From Gutemberg Richter law
-                      magnitude m2<m1 ater an event t1 of magnitude m1.  
 
     """
 
